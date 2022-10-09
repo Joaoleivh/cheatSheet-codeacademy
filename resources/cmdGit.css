@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* title styles */
+#subhead {
+    font-family: 'Silkscreen';
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.headers {
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: lightcoral;
+}
+
+/* table stylings */
+
+.cmdTable, .gitTable {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 234, 234);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 700px;
+    
+}
+
+.gitTable {
+    margin: 30px 20px ;
+}
+
+#cmdList thead , #gitList thead {
+    background-color: lightcoral;
+    color: white;
+}
+
+thead {
+    border-spacing: 0 50px;
+}
+
+tr td{
+    padding: 0 5px;
+    border-bottom: 1px solid lightcoral;
+
+}

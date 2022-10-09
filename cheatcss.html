@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/cheatseet.css">
+    <link rel="stylesheet" href="./resources/cheatcss.css">
+    <title>My Cheatsheet</title>
+</head>
+<body>
+<!-- Header -->
+        <header>
+            <h1 id="title">Cheatsheet - Basics</h1>
+            <div class="bar"></div>
+            <nav class="menus">
+                <ul>
+                    <li><a href="./cheathtml.html">Html</a></li>
+                    <li><a href="./cheatcss.html">Css</a></li>
+                    <li><a href="./cmdGit.html">Cmd & Git</a></li>
+                </ul>
+            </nav>
+        </header>   
+<!-- main content    -->
+    <main>
+        <h1 id="subhead">Common Css Properties</h1>
+<!-- some navigation bar for all topics -->
+        <div class="stylesCss" id="cssList">
+            <ul>
+                <li><a href="#CColor">Color</a></li>
+                <li><a href="#CFont">Font</a></li>
+                <li><a href="#CBox">Box Model</a></li>
+            </ul>
+        </div>
+<!-- main container -->
+        <section class="container">
+
+<!-- Small intro of what's CSS -->
+            <div class="intro">
+                <h3 class="subHeader">Cascading Style Sheets</h3>
+                <p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.</p>
+                <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#what_is_css" target="_blank">Learn more</a></p>
+            </div>
+<!-- Color section -->
+            <div class="cssTitle">
+                <h3 id="CColor">Color</h3>
+                <p>Perhaps the most common property is color. You've already used this property multiple times in the previous section.</p>
+                <br>
+                <p> <span class="tabl">Color Formats:</span></p>
+                    <table>
+                        <tr>
+                            <th>Hexadecimal</th>
+                            <td>Skyblue</td>
+                            <td>#87ceeb</td>
+                            <td><div class="blueBox"></div></td>
+                        </tr>
+                        <tr>
+                            <th>RGB</th>
+                            <td>Skyblue</td>
+                            <td>rgb (137, 207, 235)</td>
+                            <td><div class="blueBox"></div></td>
+                        </tr>
+                        <tr>
+                            <th>HSL</th>
+                            <td>Skyblue</td>
+                            <td>hsl (197, 71%, 73%)</td>
+                            <td><div class="blueBox"></div></td>
+                        </tr>
+                    </table>
+                <br>
+                <p>
+                    To give a &lt;p&gt; element blue text, we could add the following CSS rule:
+                <br>
+                <br>p {
+                <br> <span class="blue"> color: blue;</span>
+                <br>}
+                </p>
+            </div>
+<!-- Fonts section -->
+            <div class="cssTitle">
+                <h3 id="CFont">Font</h3>
+                <p>Here we'll go through all the basic fundamentals of text/font styling in detail, including setting font weight, family and style, font shorthand, text alignment and other effects, and line and letter spacing.</p>
+                <table class="fonts">
+                    <thead class="tabHeader">
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Values</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr class="fontTr">
+                            <td class="fontProp">font</td>
+                            <td >Sets all the font properties in one declaration</td>
+                            <td>font-style, font-variant, font-weight, font-size/line-height, font-family, caption, icon, menu, message-box, small-caption, status-bar, inherit</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProp">font-family</td>
+                            <td>Specifies the font family for text</td>
+                            <td>family-name, generic-family, inherit</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProp">font-size</td>
+                            <td>Specifies the font size of text</td>
+                            <td>xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, length, %, inherit</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProp">font-style</td>
+                            <td>Specifies the font style for text</td>
+                            <td>normal, italic, oblique, inherit</td>
+                        </tr>
+                        <tr>
+                            <td class="fontProp">font-weight</td>
+                            <td>Specifies the weight of a font</td>
+                            <td>normal, bold, bolder, lighter,
+                            100, 200, 300, 400, 500, 600, 700, 800, 900, inherit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+<!-- Boxmodel section -->
+            <div class="cssTitle">
+                <h3 id="CBox">Boxmodel</h3>
+                <p>In CSS, the term "box model" is used when talking about design and layout.</p>
+                <br>
+                <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+                </p>
+                <br>
+                <div class="modelBox">
+                    <div class="marg">
+                        <div class="bord">
+                            <div class="padd">
+                                <div class="contnt"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="explanList">
+                    <div class="margList">
+                        <div class="margBox"></div>
+                        <p>Margin</p>
+                    </div>
+                    <div class="paddList">
+                        <div class="paddBox"></div>
+                        <p>Padding</p>
+                    </div>
+                    <div class="bordList">
+                        <div class="bordBox"></div>
+                        <p>Border</p>
+                    </div>
+                    <div class="contntList">
+                        <div class="contntBox"></div>
+                        <p>Content </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- footer -->
+    <footer>
+        <div id="copywright">
+            <p>made by jleivh &#169; 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
